@@ -62,3 +62,6 @@ set FLASK_APP=main
 flask run
 
 ```
+The run file incase missing,create a new file name it **run** then add the following;
+
+```FLASK_APP=main.py FLASK_DEBUG=1 FLASK_ENV=development flask run```
