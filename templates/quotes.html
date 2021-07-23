@@ -1,0 +1,35 @@
+{% extends "dashboard_base.html" %}
+{% block title%} {{ title }} {% endblock %}
+{% block content%}
+<div class="container row">
+    <div class="col-md-12">
+        <p class="lead text-muted">Quotes</p>
+
+        <div class="table-responsive">
+            <table class="table table-borderless table-sm">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Branch</th>
+                        <th scope="col">Model</th>
+                    </tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for quote in quotes %}
+                    <tr class="">
+                        <td> {{ quote.name }} </td>
+                        <td> {{ quote.email }} </td>
+                        <td> {{ quote.phone_number }} </td>
+                        <td> {{ quote.branch }} </td>
+                        <td> {{ quote.model }} </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock%}
