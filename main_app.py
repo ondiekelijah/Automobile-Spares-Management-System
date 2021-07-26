@@ -29,7 +29,7 @@ bcrypt = Bcrypt()
 
 def create_app():
     app = Flask(__name__)
-    app.secret_key = '67eadccda3bc198fangelus'
+    app.secret_key = 'secret-key'
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///realspear.db"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
