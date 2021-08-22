@@ -44,8 +44,14 @@ or
 Applies for windows/macOS/Linux
 
 ```pip install -r requirements.txt```
-  
-### 4. Run the application 
+
+### 4 .Migrate/Create a database
+
+Applies for windows/macOS/Linux
+
+```python manage.py```
+
+### 5. Run the application 
 
 **For linux and macOS**
 Make the run file executable by running the code
